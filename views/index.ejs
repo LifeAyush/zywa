@@ -30,16 +30,23 @@
       <!-- output section -->
       <div class="output-flex">
         <% if (status) { %>
-        <div class="output">
-          <div class="output-title">Status:</div>
-          <div class="output-result"><%= status %></div>
-        </div>
-        <% if (comment) { %>
-        <div class="output">
-          <div class="output-title">Comment:</div>
-          <div class="output-result"><%= comment %></div>
-        </div>
-        <% } %> <% } %>
+          <% if (status === "NOT_FOUND") { %>
+            <div class="output">
+              <div class="output-result">Sorry, We cound not find your card. Please check your CardID</div>
+            </div>
+          <% } else { %>
+            <div class="output">
+              <div class="output-title">Status:</div>
+              <div class="output-result"><%= status %></div>
+            </div>
+            <% if (comment) { %>
+              <div class="output">
+                <div class="output-title">Comment:</div>
+                <div class="output-result"><%= comment %></div>
+              </div>
+            <% } %>
+          <% } %>
+        <% } %>
       </div>
       
     </div>

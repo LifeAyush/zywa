@@ -25,6 +25,7 @@ body {
   justify-content: center;
   padding: 3em;
   border-radius: 2rem;
+  width: 25rem;
 }
 
 .form-main {
@@ -33,6 +34,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1.5em;
+  width: 100%;
 }
 
 .form-label {
@@ -48,6 +50,7 @@ body {
   color: #535254;
   font-size: 1.25rem;
   font-weight: 400;
+  width: 20rem;
 }
 
 .form-input::placeholder {
@@ -65,7 +68,7 @@ body {
   border-radius: 8px;
   font-size: 1.25rem;
   font-weight: 500;
-  width: 100%;
+  width: 90%;
 }
 
 .output-title {
@@ -96,5 +99,6 @@ body {
   justify-content: center;
   width: 80%;
   border-radius: 8px;
-  padding: 0.5em 0em;
+  padding: 0.5em 0.5em;
+  text-align: center;
 }
