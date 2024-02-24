@@ -1,4 +1,3 @@
-// src/routes/cards.js
 const express = require('express');
 const router = express.Router();
 const { Pickup, DeliveryException, Delivered, Returned } = require('../../models/cardSchemas');
@@ -7,6 +6,7 @@ router.get('/', async (req, res) => {
   res.render('index', { status: null });
 });
 
+// GET request based on input being number/cardID
 router.get('/get_card_status', async (req, res) => {
   try {
     const input = req.query.input;
@@ -52,9 +52,7 @@ function findLatestCard(cards) {
 
 // Function to check if the input is a valid phone number
 function isValidPhoneNumber(input) {
-  // Add your validation logic here
-  // For simplicity, let's assume a valid phone number is a string of digits
-  return /^\d+$/.test(input);
+  return /^\d+$/.test(input); // Assuming a valid phone number is a string of digits
 }
 
 module.exports = router;

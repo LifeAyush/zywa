@@ -1,4 +1,3 @@
-// src/app.js
 require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
@@ -7,19 +6,23 @@ const cardRoutes = require("./routes/cards");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// MongoDB connection
+
+// Established MongoDB connection
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 // Middleware to parse JSON requests
 app.use(express.json());
 app.set('view engine', 'ejs');
 app.use('/styles', express.static('styles'));
 
-// Include routes
+
+// Including routes
 app.get('/', (req, res) => {
   res.render('index', { status: null });
 });
 app.use("/api", cardRoutes);
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -27,7 +30,8 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: "Internal Server Error" });
 });
 
-// Start the server
+
+// Starting the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

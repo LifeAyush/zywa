@@ -1,4 +1,3 @@
-// scripts/parseData.js
 require("dotenv").config();
 const fs = require("fs");
 const csv = require("csv-parser");
@@ -9,11 +8,14 @@ const {
   Delivered,
   Returned,
 } = require("../models/cardSchemas");
-// MongoDB connection
+
+
+// Established MongoDB connection
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
 
 // Function to parse and insert data into MongoDB
 async function parseCSVFile(filePath, Model) {
@@ -81,7 +83,8 @@ async function parseCSVFile(filePath, Model) {
   });
 }
 
-// Parse and insert data from each CSV file
+
+// Parsing and inserting data from each CSV file
 async function parseAllData() {
   try {
     await parseCSVFile("data/pickup.csv", Pickup);
@@ -94,5 +97,5 @@ async function parseAllData() {
   }
 }
 
-// Run the script
+// Running the script
 parseAllData();

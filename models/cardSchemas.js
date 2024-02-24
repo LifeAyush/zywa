@@ -1,7 +1,6 @@
-// cardSchemas.js
 const mongoose = require('mongoose');
 
-// Define schemas for each CSV type
+// Defined schemas for each CSV type
 const pickupSchema = new mongoose.Schema({
   cardId: { type: String, required: true },
   userId: { type: String, required: true },
