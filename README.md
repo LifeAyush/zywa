@@ -45,7 +45,7 @@ This project implements an API to retrieve the status of a user's card based on 
 4. Run MongoDB:
 
    ```CMD
-   mongod
+   mongosh
 
    ```
 
