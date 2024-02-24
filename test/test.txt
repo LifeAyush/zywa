@@ -1,0 +1,5 @@
+ZYW8827 --> Delivered
+ZYW8890 --> Delivery Exception: User not available
+
+534534534 --> Picked up
+971534534534 --> Returned

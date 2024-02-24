@@ -1,0 +1,98 @@
+/* styles/styles.css */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ef2d56;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-title {
+  color: #363537;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+  background-color: #ffffff;
+  justify-content: center;
+  padding: 3em;
+  border-radius: 2rem;
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.form-label {
+  color: #535254;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.form-input {
+  padding: 0.5em 1em;
+  border: 2px solid #afafaf;
+  border-radius: 8px;
+  color: #535254;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.form-input::placeholder {
+  color: #c7c6c7;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.button {
+  padding: 0.75em 1.5em;
+  background-color: #ea2d55;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+.output-title {
+  color: #363537;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.output-result {
+  color: #535254;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.output {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+.output-flex {
+  border: 2px solid #ea2d55;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-radius: 8px;
+  padding: 0.5em 0em;
+}
