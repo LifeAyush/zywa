@@ -67,8 +67,9 @@ This project implements an API to retrieve the status of a user's card based on 
 
    ```CMD
    node src/app.js
-- This will start the server, and you should see a message indicating that it's running on a specific port (default is 3000).
    ```
+
+- This will start the server, and you should see a message indicating that it's running on a specific port (default is 3000).
 
 ## Usage
 
